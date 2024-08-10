@@ -1,0 +1,237 @@
+h2{
+  color: #f4f4f4;
+  text-align: center;
+}
+.card .img-wrapper {
+  max-width: 100%;
+  height: 12em;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+img{
+  max-height: 100%;
+  border-radius: 5px;
+}
+  .carousel-inner {
+    padding: 1em;
+  }
+  body{
+    background-color: #161615;
+  }
+  
+  @media screen and (min-width: 576px) {
+    .carousel-inner {
+      display: flex;
+      width: 90%;
+      margin-inline: auto;
+      padding: 1em 0;
+      overflow: hidden;
+    }
+    .carousel-item {
+      display: block;
+      margin-right: 0;
+      flex: 0 0 calc(100% / 2);
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    .carousel-item {
+      display: block;
+      margin-right: 0;
+      flex: 0 0 calc(100% / 3);
+    }
+  }
+  .carousel .card {
+    margin: 0 0.5em;
+    border: 0;
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 3rem;
+    height: 3rem;
+    background-color: grey;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  #cart {
+    margin-top: 20px;
+}
+
+#cart-items {
+    list-style-type: none;
+    padding-left: 0;
+}
+.carrito-compras{
+  color: #f4f4f4;
+  text-align: start;
+}
+.botonesmasymenos{
+  background-color: #ffc107; /* Amarillo */
+    color: black;
+    font-weight: bold;
+    padding: 5px 15px;
+    font-size: 16px;
+    border-radius: 50%;
+}
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: center; /* Centra el contenido en la cabecera */
+  align-items: center;
+  width: 100%;
+  min-height: 60px;
+  font-size: 1rem;
+  background-color: rgba(29, 30, 34, 0.8);
+  backdrop-filter: blur(10px); /* Efecto de difuminado */
+  -webkit-backdrop-filter: blur(10px);
+}
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  width: auto; /* Ajusta el ancho para centrado */
+  justify-content: center; /* Centra los elementos de la lista */
+  align-items: center;
+}
+
+.header li {
+  margin: 0 15px; /* Espacio entre los elementos */
+}
+
+.header li:first-child {
+  text-align: center; /* Centra el texto del botón "Inicio" */
+}
+
+.header a {
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #f4f4f4;
+}
+
+.header a::after {
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  content: '';
+  width: 0;
+  height: 3px;
+  transition: all 0.2s linear;
+}
+
+.header a:hover::after {
+  width: 100%;
+  background-color: #f4f4f4;
+}
+.smooth {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+i {
+  font-size: 30px;
+  color: #f4f4f4;
+}
+
+
+.boton-carrito {
+  background-color: transparent;
+  border: transparent;
+  cursor: pointer;
+}
+
+.boton-carrito i {
+  font-size: 30px;
+  color: #f4f4f4;
+  transition: color 0.3s ease;
+}
+
+.boton-carrito:hover i {
+  color: #636363; 
+}
+
+.menuhamburguesa {
+  font-size: 30px;
+  color: #f4f4f4;
+}
+.menu-toggle {
+            display: none;
+        }
+/* Ajusta el tamaño del menú desplegable */
+/* Ajusta el tamaño del menú desplegable y redondea las esquinas */
+.menu {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 300px; /* Ajusta el ancho del menú aquí */
+  height: 400px; /* Ajusta la altura del menú aquí */
+  background-color: rgba(29, 30, 34, 0.8);
+  backdrop-filter: blur(10px); /* Efecto de difuminado */
+  -webkit-backdrop-filter: blur(10px);
+  color: white;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  transform: translateY(100%); /* Inicialmente fuera de la vista */
+  transition: transform 0.3s ease;
+  overflow-y: auto; /* Añade un scrollbar vertical si es necesario */
+  border-radius: 10px; /* Redondea las esquinas del menú */
+  z-index: 999; /* Asegura que esté por debajo del botón */
+}
+
+/* Estilo para el título del carrito centrado */
+#cart h3 {
+  text-align: center;
+  padding: 15px;
+  margin: 0;
+  border-bottom: 1px solid #555;
+}
+#cart .btn-success {
+  margin-right: 20px; /* Ajusta este valor según sea necesario para el padding deseado */
+  display: block; /* Asegura que el botón esté en su propia línea */
+  margin: 20px auto; /* Centra el botón horizontalmente y agrega un margen superior e inferior */
+}
+/* Ajusta el diseño de los elementos del menú */
+.menu li {
+  padding: 15px;
+  border-bottom: 1px solid #555;
+}
+
+.menu li:last-child {
+  border-bottom: none;
+}
+
+/* Agrega un estilo para el botón del carrito */
+.menu-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  padding: 10px;
+  background: #ff0000;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 4px;
+  z-index: 1000; /* Asegura que esté por encima del contenido */
+}
+
+.menu-icon:hover {
+  background: #000000;
+}
+
+
+        .menu-toggle:checked + .menu-icon + .menu {
+            transform: translateY(0); /* Mueve el menú a la vista */
+        }
+

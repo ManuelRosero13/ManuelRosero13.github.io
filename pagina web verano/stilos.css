@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&family=Zeyada&display=swap');
+
+
+.navbar{
+    background-color: #000000;
+    
+    height: 80px;
+    padding-top:160px ;
+}
+.login-button{
+    background-color: #009970;
+    color: #ffff;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+}
+.login-button:hover{
+    background-color: #00b383;
+
+}
+
+.navbar-toggler{
+    border: none;
+    font-size: 1.75rem;
+    justify-content: end;
+    
+}
+.navbar-toggler:focus .btn-close:focus{
+    box-shadow: none;
+}
+.nav-link{
+    color: #0011ff;
+    font-weight: 500;
+    position: relative;
+}
+.nav-link:hover .nav-link.active {
+    color: rgb(255, 255, 255);
+}
+.nav-link::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 2px;
+
+}
+
+.btn-42 {
+    /*border: 2px solid rgb(255, 255, 255);*/
+    z-index: 1;
+    color: #ffffff;
+    outline: none !important;
+    text-decoration: none !important;
+    background: transparent;
+    outline: none !important;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+}
+
+.btn-42:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background: rgb(255, 255, 255);
+    transition: all 0.3s ease;
+}
+
+.btn-42:hover {
+    color: rgb(0, 0, 0);
+}
+
+.btn-42:hover:after {
+    top: 0;
+    height: 100%;
+
+}
+
+.btn-42:active {
+    top: 2px;
+    color: #00b383;
+}
+.btn-42:focus{
+    color: #00b383;
+}
+
+body{
+    background-color: black;
+}
+.offcanvas {
+    background-color: #000000; /* Cambia este color al que prefieras */
+}
+.logo-container {
+    position: absolute; /* Posiciona el logo encima de otros elementos */
+    top: 50%; /* Centra el logo verticalmente */
+    left: 50%; /* Centra el logo horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta para centrar el logo */
+    z-index: 10; /* Asegúrate de que el logo esté encima de otros elementos */
+}
+
+
+.logo-container img {
+    height: 90px; /* Ajusta el tamaño del logo según sea necesario */
+}
+.wrapper{
+    height: 75vh;
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
+}
+section{
+ height: 100vh;
+ scroll-snap-align: start;
+ 
+}
+.wrapper section:nth-child(1){
+    background-color: #009970;
+}
+.wrapper section:nth-child(2){
+    background-color: #3545d7;
+}
+.wrapper section:nth-child(3){
+    background-color: #9fdc0f;
+}
+main {
+    padding-top: 170px; /* Ajusta el valor según la altura de tu navbar */
+  }
+.h3font{
+    font-family: "Playwrite CU", cursive;
+    font-size: 5rem;
+    
+    font-weight: 400;
+    font-style: normal;
+    padding-top: 10vh;
+}
+.img-fluid{
+width: 21.4rem;
+}
+.img-container {
+    height: 100%;
+}
+    .img-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
